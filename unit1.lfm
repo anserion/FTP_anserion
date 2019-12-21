@@ -1,0 +1,176 @@
+object Form1: TForm1
+  Left = 393
+  Height = 584
+  Top = 226
+  Width = 790
+  BorderStyle = bsDialog
+  Caption = 'FTP client (Ионисян А.С., СКФУ, МКН-м-о-19-1)'
+  ClientHeight = 584
+  ClientWidth = 790
+  DesignTimePPI = 150
+  OnClose = FormClose
+  OnCreate = FormCreate
+  LCLVersion = '2.0.6.0'
+  object sign_in_btn: TButton
+    Left = 40
+    Height = 39
+    Top = 8
+    Width = 80
+    Caption = 'LOGIN'
+    OnClick = sign_in_btnClick
+    TabOrder = 0
+  end
+  object FTP_name_edit: TEdit
+    Left = 255
+    Height = 47
+    Top = 8
+    Width = 529
+    TabOrder = 1
+    Text = 'ftp.yandex.ru'
+  end
+  object Label1: TLabel
+    Left = 134
+    Height = 35
+    Top = 8
+    Width = 102
+    Caption = 'FTP узел'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 35
+    Top = 56
+    Width = 228
+    Caption = 'Имя пользователя'
+    ParentColor = False
+  end
+  object ftp_user_edit: TEdit
+    Left = 255
+    Height = 47
+    Top = 56
+    Width = 529
+    TabOrder = 2
+    Text = 'ftp'
+  end
+  object ftp_password_edit: TEdit
+    Left = 255
+    Height = 47
+    Top = 104
+    Width = 529
+    TabOrder = 3
+    Text = 'ftp'
+  end
+  object Label3: TLabel
+    Left = 144
+    Height = 35
+    Top = 104
+    Width = 91
+    Caption = 'Пароль'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 128
+    Height = 35
+    Top = 200
+    Width = 108
+    Caption = 'Команда'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 9
+    Height = 35
+    Top = 240
+    Width = 226
+    Caption = 'Ответ FTP сервера'
+    ParentColor = False
+  end
+  object ftp_quit_btn: TButton
+    Left = 256
+    Height = 39
+    Top = 200
+    Width = 80
+    Caption = 'QUIT'
+    OnClick = ftp_quit_btnClick
+    TabOrder = 4
+  end
+  object ftp_list_btn: TButton
+    Left = 352
+    Height = 39
+    Top = 200
+    Width = 77
+    Caption = 'LIST'
+    OnClick = ftp_list_btnClick
+    TabOrder = 5
+  end
+  object ftp_cdup_btn: TButton
+    Left = 440
+    Height = 39
+    Top = 200
+    Width = 77
+    Caption = 'CDUP'
+    OnClick = ftp_cdup_btnClick
+    TabOrder = 6
+  end
+  object ftp_pwd_btn: TButton
+    Left = 528
+    Height = 39
+    Top = 200
+    Width = 77
+    Caption = 'PWD'
+    OnClick = ftp_pwd_btnClick
+    TabOrder = 7
+  end
+  object ftp_cwd_btn: TButton
+    Left = 616
+    Height = 39
+    Top = 200
+    Width = 77
+    Caption = 'CWD'
+    OnClick = ftp_cwd_btnClick
+    TabOrder = 8
+  end
+  object ftp_get_btn: TButton
+    Left = 707
+    Height = 39
+    Top = 200
+    Width = 77
+    Caption = 'GET'
+    OnClick = ftp_get_btnClick
+    TabOrder = 9
+  end
+  object Label6: TLabel
+    Left = 0
+    Height = 35
+    Top = 152
+    Width = 251
+    Caption = 'Имя файла/каталога'
+    ParentColor = False
+  end
+  object cmd_filename_edit: TEdit
+    Left = 255
+    Height = 47
+    Top = 152
+    Width = 529
+    TabOrder = 10
+    Text = '/'
+  end
+  object Bevel1: TBevel
+    Left = 7
+    Height = 310
+    Top = 270
+    Width = 774
+  end
+  object ftp_screen_memo: TMemo
+    Left = 8
+    Height = 304
+    Top = 272
+    Width = 771
+    Lines.Strings = (
+      'FTP client запущен и ожидает команды подключения к FTP'
+    )
+    ReadOnly = True
+    ScrollBars = ssAutoBoth
+    TabOrder = 11
+    WordWrap = False
+  end
+end
